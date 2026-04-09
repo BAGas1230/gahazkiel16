@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halo Sekarrr</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<!-- LANDING -->
+<div class="page" id="landing">
+
+  <div class="text">
+    <h1>Halo Sekarrr 💖</h1>
+    <p>Swipe buat liat liat, tap buat masuk ke music player </p>
+  </div>
+
+  <div class="stack" id="stack">
+    <div class="card"><img src="mykisah.jpeg"></div>
+    <div class="card"><img src="mybini.jpeg"></div>
+    <div class="card"><img src="whenyh.jpeg"></div>
+  </div>
+
+</div>
+
+<!-- PLAYER -->
+<div class="page hidden" id="playerPage">
+
+  <div class="player">
+    <img src="mykisah.jpeg" class="cover">
+
+    <h2>ABOUT YOU - 1975</h2>
+    <p>CAH CILIK GAMONAN </p>
+
+    <button id="playBtn">▶</button>
+
+    <div class="time">
+      <span id="currentTime">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audio">
+      <source src="lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <br><br>
+    <button onclick="goBack()">← Back</button>
+  </div>
+
+</div>
+
+<!-- MINI PLAYER -->
+<div class="mini-player hidden" id="miniPlayer">
+  <img src="mykisah.jpeg">
+  <div class="mini-info">
+    <div>Udahan Ah Gamonnya </div>
+  </div>
+  <button id="miniPlayBtn">▶</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
