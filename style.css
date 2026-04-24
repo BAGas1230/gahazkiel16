@@ -9,7 +9,7 @@ body {
 .bg {
   position: fixed;
   inset: 0;
-  background: url('pacar1.jpg') center/cover no-repeat;
+  background: url('mybini.jpeg') center/cover no-repeat;
   z-index: -1;
 }
 
@@ -17,7 +17,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(30px);
+  backdrop-filter: none(30px);
   background: rgba(0,0,0,0.4);
 }
 
