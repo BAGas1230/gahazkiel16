@@ -5,12 +5,20 @@ body {
   overflow-x: hidden;
 }
 
-/* BACKGROUND */
+/* BACKGROUND FIXED */
 .bg {
   position: fixed;
-  inset: 0;
-  background: url('mybini.jpeg') center/cover no-repeat;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("mybini.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -999;
+  pointer-events: none;
 }
 
 .bg::after {
@@ -34,7 +42,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* TEXT */
@@ -136,6 +144,7 @@ button {
   padding: 10px;
   backdrop-filter: blur(20px);
   background: rgba(255,255,255,.18);
+  z-index: 999;
 }
 
 .mini-player img {
